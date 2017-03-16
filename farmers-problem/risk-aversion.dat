@@ -1,0 +1,15 @@
+set Crop = wheat corn sugarbeets;
+set LowS = low;
+set Scenario = low average high;
+
+param:		Yield	PlantingCost	SellingPrice	MinimumRequirement	Quota	SellingPriceAfterQuota :=
+	wheat		2.5		150				170					200				.				.
+	corn		3		230				150					240				.				.
+	sugarbeets	20		260				36					0				6000			10;
+	
+param TotalAcres = 500;
+
+param Multiplier = 
+	low			.8 
+	average		1
+	high		1.2;
